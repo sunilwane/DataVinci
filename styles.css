@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    background-image: url('https://img.freepik.com/free-photo/abstract-blur-furniture-decoration-warehouse-store_74190-6647.jpg?t=st=1740683836~exp=1740687436~hmac=759700953fdc5a51ddf843ff4aafaf3531617824864c9f7ba6ffc19c09add073&w=1380');
+    color: #333;
+    background-size: cover;
+
+}
+
+/* --- Header Section --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.contact {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.contact button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.contact button:hover {
+    background-color: #218838;
+}
+
+/* --- Main Content --- */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+/* --- Responsive Container --- */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #E6F4EB;
+    padding: 22px;
+    border-radius: 12px;
+    max-width: 1200px;
+    width: 100%;
+    gap: 20px;
+}
+
+/* --- Left Section (Info Card) --- */
+.info-card {
+    flex: 1;
+    padding: 36px;
+    max-width: 700px;
+}
+
+.info h1 {
+    font-size: 36px;
+}
+
+.info h1 span {
+    color: #28a745;
+}
+
+/* --- Features List --- */
+ul {
+    list-style: none;
+    margin: 20px 0;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+/* --- Image Gallery --- */
+.image-gallery {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.image-gallery img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.pricing {
+    font-weight: bold;
+    color: #28a745;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* --- Right Section (Form) --- */
+.form-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    flex: 1;
+    min-width: 350px;
+    max-width: 450px;
+
+}
+
+.form-card h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.userDetails {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-looking-For {
+    width: 220px;
+    height: 29px;
+    line-height: 18.75px;
+    border-radius: 10px;
+    border: 1px solid #f5f5f5;
+    padding: 5px;
+    background: var(--Green-Green-40, #E6F4EB);
+    margin-top: 10px;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 10px !important;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #00AA6C;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.space_Btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #00AA6C;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: -20px;
+    display: none;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+/* --- Contact Info --- */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.contact-info a {
+    color: #28a745;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.number>:nth-child(2) {
+    display: none;
+}
+
+.heroSection {
+    display: none;
+}
+
+.Image-Container {
+    margin-top: -10%;
+    margin-left: 5%;
+}
+
+.titleCard {
+    margin-top: 10px;
+}
+
+.info {
+    width: 565px;
+}
+/* --- Responsive Design --- */
+@media (max-width: 1024px) {
+
+    .content {
+        flex-direction: column;
+    }
+
+    .info-card {
+        max-width: 100%;
+    }
+
+    .form-card {
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    body {
+        background: var(--Green-Green-40, #E6F4EB);
+
+    }
+
+    .logo {
+        width: 150px;
+        height: 50px;
+    }
+
+    .contact {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .image-gallery img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .img-1 .img-2 {
+        display: none;
+    }
+
+    .number {
+        display: flex;
+        gap: 10px;
+    }
+
+    .number>:nth-child(2) {
+        display: block;
+    }
+
+    .contact button {
+        display: none;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .info h1 {
+        font-size: 28px;
+    }
+
+    .userDetails {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-card {
+        padding: 10px;
+    }
+
+    .image-gallery svg {
+        display: none;
+    }
+
+    ul li {
+        font-size: 14px;
+        gap: 10px;
+        align-items: start;
+    }
+
+    .pricing {
+        font-size: 16px;
+    }
+
+    .number {
+        display: flex;
+        gap: 10px;
+    }
+
+    .number>:nth-child(2) {
+        display: block;
+    }
+
+    .space_Btn {
+        display: block;
+    }
+
+    .heroSection {
+        display: block;
+    }
+}
